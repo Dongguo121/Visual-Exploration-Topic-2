@@ -1,4 +1,4 @@
-FROM pihz/vins:v1.0
+FROM pihz/vins:v1.2
 
 # 替换为阿里云镜像源
 RUN sed -i 's|http://archive.ubuntu.com|http://mirrors.aliyun.com|g' /etc/apt/sources.list
