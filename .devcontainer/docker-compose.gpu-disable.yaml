@@ -1,0 +1,7 @@
+version: '3'
+services:
+  vins_mono:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      HAS_GPU: disable
