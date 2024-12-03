@@ -6,7 +6,17 @@
 
 ### 编译
 
-使用 Vins-Fusion-Ros2版本执行，在整个编译过程中请先安装`thirdparty`中的第三方库，然后执行 `colcon build`。
+使用 Vins-Fusion-Ros2版本执行，在整个编译过程中请先安装`thirdparty`中的第三方库
+```shell
+cd ..
+cd thirdparty/ceres-solver/
+mkdir -p build
+cd build
+cmake ..
+make -j4
+make install
+```
+然后对整个项目进行编译，执行 `colcon build`。
 需要注意的是，可能受限于电脑性能等问题，无法一次性编译成功，甚至由于资源消耗过大导致退出和停止，这点是很正常的，尝试控制编译过程中并行构建任务的数量
 
 ```shell
