@@ -34,3 +34,4 @@ ros2 run vins vins_node path_to_`VINS-Fusion-ROS2/config/euroc/euroc_mono_imu_co
 `/cam0/image_raw`和`/imu0`可以参考这个发送内容，数据类型可以参考`sensor`中的内容。
 
 额外的可以通过`rviz`来查看运动轨迹，存在问题请和我联系
+
